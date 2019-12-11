@@ -1,0 +1,11 @@
+.idea/*
+composer.lock
+vendor/*
+!.gitkeep
+build/*
+coverage/*
+logs/*
+sample/cache/*
+sample/.htaccess
+composer.phar
+cache/*
