@@ -4,8 +4,9 @@ declare(strict_types=1);
 namespace KnotPhp\Module\NyholmPsr7\Package;
 
 use KnotLib\Kernel\Module\PackageInterface;
-use KnotModule\KnotPipeline\KnotPipelineModule;
-use KnotModule\Stk2kEventStream\Stk2kEventStreamModule;
+
+use KnotPhp\Module\KnotPipeline\KnotPipelineModule;
+use KnotPhp\Module\Stk2kEventStream\Stk2kEventStreamModule;
 
 use KnotPhp\Module\NyholmPsr7\NyholmPsr7RequestModule;
 use KnotPhp\Module\NyholmPsr7\NyholmPsr7ResponseModule;
