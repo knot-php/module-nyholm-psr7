@@ -13,7 +13,6 @@ use KnotLib\Kernel\Module\ComponentModule;
 use KnotLib\Kernel\Module\Components;
 use KnotLib\Kernel\EventStream\Channels;
 use KnotLib\Kernel\EventStream\Events;
-use KnotLib\Support\Adapter\PsrResponseAdapter;
 
 class NyholmPsr7ResponseModule extends ComponentModule
 {
@@ -55,7 +54,7 @@ class NyholmPsr7ResponseModule extends ComponentModule
             $responseBody = $psr17Factory->createStream('');
             $response = $psr17Factory->createResponse(200)->withBody($responseBody);
 
-            $app->response(new PsrResponseAdapter($response));
+            $app->response($response);
 
             // fire event
             $app->eventstream()->channel(Channels::SYSTEM)->push(Events::RESPONSE_ATTACHED, $app->response());

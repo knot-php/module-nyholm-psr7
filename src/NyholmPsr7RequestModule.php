@@ -61,7 +61,7 @@ class NyholmPsr7RequestModule extends ComponentModule
             );
 
             $request = $creator->fromGlobals();
-            $app->request(new PsrRequestAdapter($request));
+            $app->request($request);
 
             // fire event
             $app->eventstream()->channel(Channels::SYSTEM)->push(Events::REQUEST_ATTACHED, $app->request());
