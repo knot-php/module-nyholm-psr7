@@ -14,7 +14,6 @@ use KnotLib\Kernel\Module\ComponentModule;
 use KnotLib\Kernel\Module\Components;
 use KnotLib\Kernel\EventStream\Channels;
 use KnotLib\Kernel\EventStream\Events;
-use KnotLib\Support\Adapter\PsrRequestAdapter;
 
 class NyholmPsr7RequestModule extends ComponentModule
 {
