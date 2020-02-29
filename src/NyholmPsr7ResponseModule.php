@@ -9,23 +9,33 @@ use Nyholm\Psr7\Factory\Psr17Factory;
 
 use KnotLib\Kernel\Exception\ModuleInstallationException;
 use KnotLib\Kernel\Kernel\ApplicationInterface;
-use KnotLib\Kernel\Module\ComponentModule;
-use KnotLib\Kernel\Module\Components;
+use KnotLib\Kernel\Module\ModuleInterface;
+use KnotLib\Kernel\Module\ComponentTypes;
 use KnotLib\Kernel\EventStream\Channels;
 use KnotLib\Kernel\EventStream\Events;
 
-class NyholmPsr7ResponseModule extends ComponentModule
+class NyholmPsr7ResponseModule implements ModuleInterface
 {
+    /**
+     * Declare dependency on another modules
+     *
+     * @return array
+     */
+    public static function requiredModules() : array
+    {
+        return [];
+    }
+
     /**
      * Declare dependent on components
      *
      * @return array
      */
-    public static function requiredComponents() : array
+    public static function requiredComponentTypes() : array
     {
         return [
-            Components::EVENTSTREAM,
-            Components::DI,
+            ComponentTypes::EVENTSTREAM,
+            ComponentTypes::DI,
         ];
     }
 
@@ -36,7 +46,7 @@ class NyholmPsr7ResponseModule extends ComponentModule
      */
     public static function declareComponentType() : string
     {
-        return Components::RESPONSE;
+        return ComponentTypes::RESPONSE;
     }
 
     /**
