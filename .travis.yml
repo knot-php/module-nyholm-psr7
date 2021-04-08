@@ -1,16 +1,16 @@
 language: php
 
 php:
-  - 7.1
-  - 7.2
   - 7.3
+  - 7.4
+  - 8.0
 
 before_script:
   - composer install
 
 script:
   - echo $(phpenv version-name)
-  - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-6.5.9.phar
+  - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-9.5.4.phar
   - phpunit --version
   - phpunit --configuration phpunit.xml
 

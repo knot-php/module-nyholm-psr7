@@ -18,7 +18,7 @@ nyholm/psr7 installer
 
 ## Requirement
 
-PHP 7.1 or later
+PHP 7.3 or later
 
 ## Installing knot-php/module-nyholm-psr7
 

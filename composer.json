@@ -11,10 +11,10 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.3",
     "psr/http-message": "^1.0",
-    "nyholm/psr7": "^1.2",
-    "nyholm/psr7-server": "^0.3",
+    "nyholm/psr7": "^1.4",
+    "nyholm/psr7-server": "^1.0",
     "knot-lib/kernel": "~0.1",
     "knot-lib/module": "~0.1",
     "knot-lib/support": "~0.1",
@@ -22,7 +22,7 @@
     "knot-php/module-stk2k-eventstream": "~0.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.3.0",
+    "phpunit/phpunit": "^9.5.0",
     "php-coveralls/php-coveralls": "^2.0"
   },
   "autoload": {
