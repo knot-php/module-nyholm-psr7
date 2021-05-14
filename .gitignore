@@ -9,3 +9,4 @@ sample/cache/*
 sample/.htaccess
 composer.phar
 cache/*
+.phpunit.result.cache

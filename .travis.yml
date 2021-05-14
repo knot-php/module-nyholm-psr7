@@ -1,6 +1,7 @@
 language: php
 
 php:
+  - 7.2
   - 7.3
   - 7.4
   - 8.0
@@ -10,7 +11,7 @@ before_script:
 
 script:
   - echo $(phpenv version-name)
-  - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-9.5.4.phar
+  - curl -sSfL -o ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-8.5.15.phar
   - phpunit --version
   - phpunit --configuration phpunit.xml
 

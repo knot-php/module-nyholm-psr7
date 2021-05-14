@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": ">=7.3",
+    "php": ">=7.2",
     "psr/http-message": "^1.0",
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
@@ -22,7 +22,7 @@
     "knot-php/module-stk2k-eventstream": "~0.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.5.0",
+    "phpunit/phpunit": "^8.5.15",
     "php-coveralls/php-coveralls": "^2.0"
   },
   "autoload": {
