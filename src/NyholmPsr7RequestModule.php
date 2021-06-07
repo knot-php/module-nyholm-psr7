@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace knotphp\module\nyholmPsr7;
+namespace knotphp\module\nyholmpsr7;
 
 use Throwable;
 

@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace knotphp\module\nyholmPsr7\package;
+namespace knotphp\module\nyholmpsr7\package;
 
 use knotlib\kernel\Module\PackageInterface;
 
 use knotphp\module\knotpipeline\KnotPipelineModule;
 use knotphp\module\stk2keventstream\Stk2kEventStreamModule;
-use knotphp\module\nyholmPsr7\NyholmPsr7RequestModule;
-use knotphp\module\nyholmPsr7\NyholmPsr7ResponseModule;
+use knotphp\module\nyholmpsr7\NyholmPsr7RequestModule;
+use knotphp\module\nyholmpsr7\NyholmPsr7ResponseModule;
 
 class NyholmPsr7Package implements PackageInterface
 {

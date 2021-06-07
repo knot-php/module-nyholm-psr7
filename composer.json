@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "knotphp\\module\\nyholmPsr7\\": "src/"
+      "knotphp\\module\\nyholmpsr7\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "knotphp\\module\\nyholmPsr7\\test\\": "test/"
+      "knotphp\\module\\nyholmsr7\\test\\": "test/"
     }
   }
 }
