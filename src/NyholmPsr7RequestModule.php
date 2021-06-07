@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotPhp\Module\NyholmPsr7;
+namespace knotphp\module\nyholmPsr7;
 
 use Throwable;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7Server\ServerRequestCreator;
 
-use KnotLib\Kernel\Exception\ModuleInstallationException;
-use KnotLib\Kernel\Kernel\ApplicationInterface;
-use KnotLib\Kernel\Module\ModuleInterface;
-use KnotLib\Kernel\Module\ComponentTypes;
-use KnotLib\Kernel\EventStream\Channels;
-use KnotLib\Kernel\EventStream\Events;
+use knotlib\kernel\exception\ModuleInstallationException;
+use knotlib\kernel\kernel\ApplicationInterface;
+use knotlib\kernel\module\ModuleInterface;
+use knotlib\kernel\module\ComponentTypes;
+use knotlib\kernel\eventstream\Channels;
+use knotlib\kernel\eventstream\Events;
 
 class NyholmPsr7RequestModule implements ModuleInterface
 {
